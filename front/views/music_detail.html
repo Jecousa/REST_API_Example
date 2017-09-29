@@ -1,0 +1,21 @@
+<a href="#/music">go back</a>
+<div class="panel panel-default" ng-init="getMusic1()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{music.artist}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{music.image_url}}">
+      </div>
+      <div class="col-md-8">
+        <p>{{music.description}}</p>
+        <ul class="list-group">
+          <li class="list-group-item">Genre: {{music.genre}}</li>
+          <li class="list-group-item">Description: {{music.description}}</li>
+      </div>
+</div>
+
+<div class="pull-right">
+  <a href="#!/music/edit/{{music._id}}">Edit</a> | <a href="#!/" ng-click="removeMusic(music._id)">Delete</a>
+</div>

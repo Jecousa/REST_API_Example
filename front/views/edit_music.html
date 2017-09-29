@@ -1,0 +1,27 @@
+<a href="#/music">go back</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit Music</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <form ng-submit = "updateMusic()" ng-init="getMusic()">
+      <div class="form-group">
+        <label>Artist</label>
+        <input type="text" class="form-control" ng-model="music.artist" placeholder="artist">
+      </div>
+      <div class="form-group">
+        <label>Genre</label>
+        <input type="text" class="form-control" ng-model="music.genre" placeholder="genre">
+          <option value ="rap">Rap</option>
+          <<option value="rock">Rock</option>
+          <<option value="pop">Pop</option>
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea class="form-control" ng-model="music.description" placeholder="description">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+      </div>
+</div>

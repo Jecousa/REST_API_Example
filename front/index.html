@@ -1,0 +1,44 @@
+<html ng-app="RESTAPI">
+<head>
+  <title>Music Catalog</title>
+  <link rel = "stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel = "stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Music Catalog</a>
+      </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="#!/music/add">Add Music</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+            </div>
+          </div>
+      </div>
+
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-route/angular-route.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+<script src="/app.js"></script>
+<script src="/controllers/music.js"></script>
+<script src="/controllers/genre.js"></script>
+</body>
+</html>
